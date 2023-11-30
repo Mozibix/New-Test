@@ -1,0 +1,41 @@
+
+.nav_inner{
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo_sec{
+    display: flex;
+    align-items: center;
+   gap:1rem;
+   
+}
+
+.nav_links{
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+}
+
+ul{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(146, 31, 31)
+    
+}
+
+li a:hover{
+    text-decoration: underline;
+   
+    
+}
+
+
+.brand_name h2{
+   font-size: 2rem;
+}
