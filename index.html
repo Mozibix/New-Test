@@ -1,52 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Test</title>
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
-        <!-- NAVIGATION -->
-        <nav class="nav">
-            <div class="nav_inner">
-              <div class="logo_sec">
-                 <div class="brand_name">
-                    <h2>sad Zepplins</h2>
-                 </div>
-                 <div class="hire_me">
-                    <img src="Images/Hireme.png">
-                 </div>
-              </div>
-              <!-- HIDE THIS ON MOBILE SCREENS -->
-               <div>
-                 <ul class="nav_links">
-                    <li>
-                      <a class="nav-link" href="#">BLOG</a>
-                    </li>
-                    <li>
-                      <a class="nav-link" href="#">PORTFOLIO</a>
-                    </li>
-                    <li>
-                      <a class="nav-link" href="#">CV</a>
-                    </li>
-                    <li>
-                      <a class="nav-link" href="#">FREELANCE</a>
-                    </li>
-                    <li>
-                      <a class="nav-link" href="#">ABOUT</a>
-                    </li>
-                    <li>
-                      <a class="nav-link" href="#">CONTACT</a>
-                    </li>
-                    <li>
-                      <a class="nav-link" href="#">STORE</a>
-                    </li>
-                  </ul>
-               </div>
-              
+    <link href="styles.css" rel="stylesheet" />
+    <link href="hero.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+      <div class="nav_inner">
+        <div class="logo_sec">
+          <div class="brand_name">
+            <h2><span class="sad">sad</span> Zepplins</h2>
+          </div>
+          <div class="hire_me">
+            <img src="Images/Hireme.png" />
+          </div>
+        </div>
+        <!-- HIDE THIS ON MOBILE SCREENS -->
+        <div>
+          <ul class="nav_links">
+            <li>
+              <a class="nav-link" href="#">BLOG</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">PORTFOLIO</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">CV</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">FREELANCE</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">STORE</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <img src="Images/Group 329.svg" />
+        </div>
+      </div>
+    </nav>
+    <!-- <section class="hero_section">
+      <div class="hero_wrap">
+        <div class="text">
+          <div class="text_wrap">
+            <h2 class="blog"><span>Blog Posts</span></h2>
+            <h2>I think so, this is it.</h2>
+            <p class="ptext">
+              Design begins after I begin to think about how to present an
+              experience most successfully, whether a button I put in can solve
+              a problem. The only point in design is not UI design. If the user
+              does not have a good experience at the end of the product, the
+              design will be considered unsuccessful in my opinion.
+            </p>
+          </div>
+          <div class="buttons">
+            <button type="button" class="twitter">
+              <img src="Images/twitter.svg" class="fa-twitter" />Twitter
+            </button>
+            <button type="button" class="linkedin">
+              <img src="Images/linkedin.svg" class="fa-linkedin" />Linkedin
+            </button>
+            <button type="button" class="medium">
+              <img src="Images/medium.svg" class="fa-medium" />Medium
+            </button>
+          </div>
+        </div>
+        <div class="sidebar">
+          <img src="Images/Sidebar.png" />
+        </div>
+      </div>
+    </section> -->
+
+    <!-- {/* HERO SECTION */} -->
+    <section class="hero_sec">
+      <div class="hero_inner">
+        <div class="hero_left">
+          <div class="hero_left_inner">
+            <div class="hero_left_header header_text big">
+              <h2 class="fw_700">Blog Posts</h2>
+
+              <p class="fw_500">I think so, this is it.</p>
             </div>
-          </nav>
-      
-</body>
+
+            <div class="hero_left_quotes small_text">
+              <p>
+                Design begins after I begin to think about how to present an
+                experience most successfully, whether a button I put in can
+                solve a problem. The only point in design is not ui design, if
+                the user does not have a good experience at the end of the
+                product, the design will be considered unsuccessful in my
+                opinion.
+              </p>
+            </div>
+
+            <div class="hero_left_btn_sec">
+              <button>
+                <span>
+                  <img src="Images/twitter.svg" />
+                </span>
+                Twitter
+              </button>
+
+              <button>
+                <span> <img src="Images/linkedin.svg" /> </span>
+                Linkedin
+              </button>
+
+              <button>
+                <span>
+                  <img src="Images/medium.svg" />
+                </span>
+                Medium
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero_right">
+          <div class="hero_right_inner">
+            <img src="Images/Sidebar.png" class="hero_right_img" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
