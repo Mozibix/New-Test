@@ -4,16 +4,38 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Montserrat;
+  font-style: normal;
 }
+
+/* MEDIA SCREEN
+
+    @media screen and (max-width: 400px) {
+
+    }
+      @media screen and (min-width: 576px) {
+
+    }
+      @media screen and (min-width: 992px) {
+
+    }
+      @media screen and (min-width: 1200px) {
+
+    }
+*/
 
 body {
-  font-family: Montserrat;
+  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
 }
 
+/* NAV SECTION */
+
 .nav_inner {
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
@@ -22,7 +44,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .hire_me {
@@ -52,7 +74,7 @@ li a:hover {
 }
 
 .brand_name h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 800;
 }
 
@@ -60,17 +82,45 @@ li a:hover {
   display: block;
 }
 
-/* .hero_section {
-  padding: 2rem 7rem;
+/* HERO SECTION */
+.hero_sec {
+  padding: 1rem;
+  display: none !important;
 }
 
-
-.hero_wrap {
+.hero_inner {
+  width: 100%;
+  margin: 0 auto;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  justify-content: space-around;
 }
 
-.blog {
+/* HERO LEFT */
+
+.hero_left {
+  width: 100%;
+  max-width: 39.4375rem;
+}
+
+.hero_left_inner {
+  display: grid;
+  gap: 2.25rem;
+  padding-top: 5rem;
+}
+
+/* HERO RIGHT */
+
+.hero_right {
+  display: none;
+}
+
+.hero_right img {
+  width: 25.54088rem;
+  height: 25.4375rem;
+  flex-shrink: 0;
+}
+
+.hero_left_header h2 {
   color: #d05270;
   font-family: Montserrat;
   font-size: 1.25rem;
@@ -79,58 +129,62 @@ li a:hover {
   line-height: normal;
 }
 
-.text_wrap {
+.hero_left_header p {
+  color: #424242;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
   line-height: normal;
 }
 
-.ptext {
-  line-height: 1.5rem;
+.hero_left_quotes {
+  color: #424242;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 0.9rem */
 }
 
-.sidebar {
-  justify-self: end;
+.hero_left_btn_sec {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.58rem;
 }
 
-.twitter {
+.hero_left_btn_sec button {
+  width: 6.42869rem;
+  height: 2.62913rem;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.88rem;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.hero_left_btn_sec button:first-child {
   background: #47acdf;
 }
 
-.linkedin {
+.hero_left_btn_sec button:nth-child(2) {
   background: #1275b1;
 }
 
-.medium {
+.hero_left_btn_sec button:nth-child(3) {
   background: #000000;
 }
-
-.fa-twitter,
-.fa-linkedin,
-.fa-medium {
-  width: 2rem;
-  height: 2rem;
-}
-
-button {
-  color: #fff;
-  border: none;
-  width: 6.42869rem;
-  height: 2.62913rem;
-  gap: 0.88rem;
-  text-align: center;
-}
-
-.buttons {
-  display: flex;
-  align-content: center;
-  justify-content: space-around;
-  gap: 2.5%;
-}
-
-.buttons button {
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-} */
 
 @media screen and (min-width: 992px) {
   .hamburger {
@@ -142,6 +196,11 @@ button {
     justify-content: center;
     gap: 1.5rem;
   }
+
+  .logo_sec {
+    gap: 1rem;
+  }
+
   .brand_name h2 {
     font-size: 2.2rem;
   }
@@ -158,14 +217,41 @@ button {
     align-content: center;
   }
 
-  /* .hero_wrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
-    align-content: center;
+  .hero_sec {
+    padding: 1rem;
   }
 
-  .blog {
+  .hero_inner {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .hero_left {
+    width: 100%;
+    max-width: 39.4375rem;
+  }
+
+  .hero_left_inner {
+    display: grid;
+    gap: 2.25rem;
+    padding-top: 5rem;
+  }
+
+  .hero_right {
+    display: block;
+  }
+
+  .hero_right img {
+    width: 25.54088rem;
+    height: 25.4375rem;
+    flex-shrink: 0;
+  }
+
+  .hero_left_header h2 {
     color: #d05270;
     font-family: Montserrat;
     font-size: 3.25rem;
@@ -174,63 +260,61 @@ button {
     line-height: normal;
   }
 
-  .text_wrap {
+  .hero_left_header p {
+    color: #424242;
+    font-family: Montserrat;
+    font-size: 3.25rem;
+    font-style: normal;
+    font-weight: 500;
     line-height: normal;
   }
 
-  .ptext {
-    line-height: 1rem;
+  .hero_left_quotes {
+    color: #424242;
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 
-  .twitter {
+  .hero_left_btn_sec {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.12rem;
+  }
+
+  .hero_left_btn_sec button {
+    width: 12.5625rem;
+    height: 3.75rem;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.88rem;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 0.25rem;
+  }
+
+  .hero_left_btn_sec button:first-child {
     background: #47acdf;
   }
 
-  .linkedin {
+  .hero_left_btn_sec button:nth-child(2) {
     background: #1275b1;
   }
 
-  .medium {
+  .hero_left_btn_sec button:nth-child(3) {
     background: #000000;
   }
-
-  .fa-twitter,
-  .fa-linkedin,
-  .fa-medium {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  button {
-    color: #fff;
-    border: none;
-    width: 12.5625rem;
-    height: 3.75rem;
-    gap: 1.88rem;
-    text-align: center;
-  }
-
-  .buttons {
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2.5%;
-  } */
 }
-
-/* MEDIA SCREEN
-
-    @media screen and (max-width: 400px) {
-
-    }
-      @media screen and (min-width: 576px) {
-
-    }
-      @media screen and (min-width: 992px) {
-
-    }
-      @media screen and (min-width: 1200px) {
-
-    }
-*/
